@@ -1,0 +1,44 @@
+{
+  "name": "quickdiff",
+  "version": "0.0.1",
+  "description": "A website allowing for quick diff of cut-and-paste text",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack --progress --colors",
+    "watch": "webpack --colors --watch",
+    "dev": "npm-run-all --parallel start watch"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derekdreery/quickdiff.git"
+  },
+  "keywords": [
+    "diff"
+  ],
+  "author": "Richard Dodd <richard.dodd@ukais.co.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derekdreery/quickdiff/issues"
+  },
+  "homepage": "https://github.com/derekdreery/quickdiff#readme",
+  "dependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "classnames": "^2.2.5",
+    "css-loader": "^0.23.1",
+    "diff": "^2.2.3",
+    "html-webpack-plugin": "^2.22.0",
+    "koa": "^1.2.1",
+    "koa-static": "^2.0.0",
+    "node-sass": "^3.8.0",
+    "npm-run-all": "^2.3.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  }
+}

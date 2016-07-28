@@ -1,0 +1,40 @@
+html, body, #mount {
+    height: 100%;
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.area {
+    flex: 1 0 33%;
+    width: 33%; // hack
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    textarea, .output {
+        flex: 1;
+        overflow: auto;
+        display: flex;
+    }
+    textarea {
+        resize: none;
+        white-space: pre;
+        word-wrap: normal;
+    }
+}
+
+.output {
+    .added {
+        color: hsl(120, 100%, 25%);
+        background-color: hsl(120, 100%, 85%);
+    }
+    .removed {
+        color: hsl(0, 100%, 50%);
+        background-color: hsl(0, 100%, 90%);
+    }
+}
